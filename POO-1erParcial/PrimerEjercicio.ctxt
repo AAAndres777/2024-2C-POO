@@ -1,4 +1,5 @@
 #BlueJ class context
 comment0.target=PrimerEjercicio
-comment0.text=Ingresar\ tres\ nummeros\ enteros\ y\ mostrar\ la\ suma\ de\ ellos\r\n
-numComments=1
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
