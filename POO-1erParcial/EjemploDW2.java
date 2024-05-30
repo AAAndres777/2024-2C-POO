@@ -12,7 +12,7 @@ public class EjemploDW2
         {
             String entrada=JOptionPane.showInputDialog("Ingrese un Numero");
             num=Integer.parseInt(entrada);
-            contar++;//contar=contar+1;
+            contar++;//contar=contar+1;//Contador
             if(contar>=3)seguir=0;
         }
         while(seguir==1);
