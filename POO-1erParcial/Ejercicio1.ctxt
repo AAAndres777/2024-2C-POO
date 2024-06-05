@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Ejercicio1
+comment0.text=\r\nPedir\ dos\ numeros\ y\ mostrar\ la\ suma\ de\ ellos.\ Utilizar\ Metodos\ y\ Funciones\r\npara\ simplicar\ el\ main\ \ \ \r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
