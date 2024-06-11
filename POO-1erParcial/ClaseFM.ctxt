@@ -1,14 +1,22 @@
 #BlueJ class context
 comment0.target=ClaseFM
 comment1.params=a
-comment1.target=void\ imprimir(int[])
+comment1.target=void\ imprimirM(int[])
 comment2.params=a
-comment2.target=void\ llenarArreglo(int[])
+comment2.target=java.lang.String\ imprimir(int[])
 comment3.params=a
-comment3.target=void\ imprimirW(int[])
-comment4.params=mensaje
-comment4.target=void\ mostrarMensaje(java.lang.String)
-comment5.params=msg
-comment5.target=int\ pedirEntero(java.lang.String)
-comment5.text=public\ static\ double\ pedirDecimal(String\ msg)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ double\ n\=0;\r\n\ \ \ \ \ \ \ \ return\ n;\r\n}
-numComments=6
+comment3.target=int\ mayor(int[])
+comment4.params=a
+comment4.target=int\ menor(int[])
+comment5.params=a
+comment5.target=void\ llenarArreglo(int[])
+comment6.params=a
+comment6.target=void\ imprimirW(int[])
+comment7.params=mensaje
+comment7.target=void\ mostrarMensaje(java.lang.String)
+comment8.params=mensaje
+comment8.target=void\ mensaje(java.lang.String)
+comment9.params=msg
+comment9.target=int\ pedirEntero(java.lang.String)
+comment9.text=public\ static\ double\ pedirDecimal(String\ msg)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ double\ n\=0;\r\n\ \ \ \ \ \ \ \ return\ n;\r\n}
+numComments=10
