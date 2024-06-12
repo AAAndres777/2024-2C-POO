@@ -3,9 +3,18 @@ import javax.swing.JOptionPane;
 public class ClaseFM
 {
     //Metodo que recibe un arreglo de enterios y lo muestra en un MsgDialog
-    public static void imprimirM(int a[])
+    public static void print(int a[])
     {
         String salida="";
+        for(int i=0;i<a.length;i++)
+        {
+            salida=salida+a[i]+" ";
+        }
+        mostrarMensaje(salida);
+    }
+    public static void print(int a[], String titulo)
+    {
+        String salida=titulo+"\n";
         for(int i=0;i<a.length;i++)
         {
             salida=salida+a[i]+" ";
@@ -48,7 +57,7 @@ public class ClaseFM
         
         return menor;
     }
-    public static void llenarArreglo(int a[])
+    public static void llenarArreglo(int a[])//Llenar x User
     {
         for(int i=0;i<a.length;i++)
         {
@@ -57,6 +66,24 @@ public class ClaseFM
             //String entrada=JOptionPane.showInputDialog("Ingrese un Numero");
             //a[i]=Integer.parseInt(entrada);
         }
+    }
+    public static void llenarArreglo(int a[], int v)//Rellenar arreglo con valor
+    {
+        for(int i=0;i<a.length;i++)
+        {
+            a[i]=v;
+        }
+    }
+    public static void llenarAleatorio(int a[], int d, int h)//Llenar arreglo aleatoriamente
+    {
+        for(int i=0;i<a.length;i++)
+        {
+            a[i]=generaAleatorio(d,h);
+        }
+    }
+    public static int generaAleatorio(int d, int h)
+    {
+        return ((int)(Math.random()*(h-d+1)+d));
     }
     public static void imprimirW(int a[])
     {

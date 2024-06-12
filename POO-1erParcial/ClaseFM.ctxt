@@ -1,22 +1,30 @@
 #BlueJ class context
 comment0.target=ClaseFM
 comment1.params=a
-comment1.target=void\ imprimirM(int[])
-comment2.params=a
-comment2.target=java.lang.String\ imprimir(int[])
+comment1.target=void\ print(int[])
+comment10.params=a
+comment10.target=void\ imprimirW(int[])
+comment11.params=mensaje
+comment11.target=void\ mostrarMensaje(java.lang.String)
+comment12.params=mensaje
+comment12.target=void\ mensaje(java.lang.String)
+comment13.params=msg
+comment13.target=int\ pedirEntero(java.lang.String)
+comment13.text=public\ static\ double\ pedirDecimal(String\ msg)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ double\ n\=0;\r\n\ \ \ \ \ \ \ \ return\ n;\r\n}
+comment2.params=a\ titulo
+comment2.target=void\ print(int[],\ java.lang.String)
 comment3.params=a
-comment3.target=int\ mayor(int[])
+comment3.target=java.lang.String\ imprimir(int[])
 comment4.params=a
-comment4.target=int\ menor(int[])
+comment4.target=int\ mayor(int[])
 comment5.params=a
-comment5.target=void\ llenarArreglo(int[])
+comment5.target=int\ menor(int[])
 comment6.params=a
-comment6.target=void\ imprimirW(int[])
-comment7.params=mensaje
-comment7.target=void\ mostrarMensaje(java.lang.String)
-comment8.params=mensaje
-comment8.target=void\ mensaje(java.lang.String)
-comment9.params=msg
-comment9.target=int\ pedirEntero(java.lang.String)
-comment9.text=public\ static\ double\ pedirDecimal(String\ msg)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ double\ n\=0;\r\n\ \ \ \ \ \ \ \ return\ n;\r\n}
-numComments=10
+comment6.target=void\ llenarArreglo(int[])
+comment7.params=a\ v
+comment7.target=void\ llenarArreglo(int[],\ int)
+comment8.params=a\ d\ h
+comment8.target=void\ llenarAleatorio(int[],\ int,\ int)
+comment9.params=d\ h
+comment9.target=int\ generaAleatorio(int,\ int)
+numComments=14
