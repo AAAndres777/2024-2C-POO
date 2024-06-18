@@ -2,6 +2,24 @@
 import javax.swing.JOptionPane;
 public class ClaseFM
 {
+    public static void reemplazar(int a[], int or, int des)
+    {
+        int tmp=a[des-1];
+        a[des-1]=a[or-1];
+        a[or-1]=tmp;
+    }
+    public static int pedirPosicion(int a[])
+    {
+        if(a.length==0)return 0;
+        boolean seguir=true;
+        int pos=0;
+        do
+        {
+            pos=pedirEntero("Ingrese una Posicion del Arreglo");
+            if(pos>0&&pos<=a.length)seguir=false;
+        }while(seguir);
+        return pos;
+    }
     //Metodo que recibe un arreglo de enterios y lo muestra en un MsgDialog
     public static void print(int a[])
     {
