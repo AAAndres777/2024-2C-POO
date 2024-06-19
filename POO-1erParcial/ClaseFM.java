@@ -2,6 +2,43 @@
 import javax.swing.JOptionPane;
 public class ClaseFM
 {
+    public static int promedio(int a[])
+    {
+        return suma(a)/a.length;
+    }
+    public static int[] mayorQue(int a[], int v)
+    {
+        int tam=0;
+        
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]>v)tam++;
+        }
+        
+        int c[]=new int[tam];
+        int pos=0;
+        
+        for(int i=0;i<a.length;i++)
+        {
+            if(a[i]>v)
+            {
+                c[pos]=a[i];
+                pos++;
+            }
+        }
+        return c;
+    }
+    public static int suma(int a[])
+    {
+        int suma=0;
+        int i=0;
+        while(i<a.length)
+        {
+            suma=suma+a[i];
+            i++;
+        }
+        return suma;
+    }
     public static void reemplazar(int a[], int or, int des)
     {
         int tmp=a[des-1];
