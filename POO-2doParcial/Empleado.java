@@ -36,6 +36,18 @@ public class Empleado
     
     //Gets
     
+    //Funcion
+    public boolean comparar(String cedula)
+    {
+         if(this.cedula.equals(cedula))return true;
+         else return false;
+    }
+    //Funcion
+    public boolean siEsTerceraEdad()
+    {
+        if(edad>=60)return true;
+        else return false;
+    }
     //ToString
     public String toString()//Funcion
     {

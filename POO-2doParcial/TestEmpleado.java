@@ -14,7 +14,10 @@ public class TestEmpleado
         
         //e=new Empleado();
         //int e=0;
-        
         ClaseFM.mensaje("Los Datos del Empleado son:\n"+e.toString());
+        
+        boolean teredad=e.siEsTerceraEdad();
+        if(teredad)ClaseFM.mensaje("El Empleado es de Tercera Edad");
+        else ClaseFM.mensaje("El Empleado No es de Tercera Edad");
     }
 }
