@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Rectangulo
+comment1.params=x\ y\ base\ altura
+comment1.target=Rectangulo(int,\ int,\ int,\ int)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment3.params=
+comment3.target=int\ area()
+numComments=4
