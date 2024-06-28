@@ -9,11 +9,17 @@ public class Cuadrado extends Figura //Heredamos de Figura
         super(x,y,"Cuadrado");
         this.lado=lado;
     }
+    public Cuadrado()
+    {
+        super();
+        lado=ClaseFM.pedirEntero("Ingrese el Lado del Cuadrado");
+        setNombre("Cuadrado");
+    }
     
     //toString
     public String toString()
     {
-        return super.toString()+" Area: "+area();
+        return super.toString()+" Area: "+area()+" Lado: "+lado;
     }
     
     //Area

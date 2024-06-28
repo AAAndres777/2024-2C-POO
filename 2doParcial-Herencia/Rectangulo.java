@@ -11,7 +11,13 @@ public class Rectangulo extends Figura //Heredamos de Figura
         this.base=base;
         this.altura=altura;
     }
-    
+    public Rectangulo()
+    {
+        super();
+        base=ClaseFM.pedirEntero("Ingrese una Base");
+        altura=ClaseFM.pedirEntero("Ingrese una Altura");
+        setNombre("Rectangulo");
+    }
     //toString
     public String toString()
     {

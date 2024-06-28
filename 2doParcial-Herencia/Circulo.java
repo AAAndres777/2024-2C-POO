@@ -9,6 +9,12 @@ public class Circulo extends Figura //Heredamos de Figura
         super(x,y,"Circulo");
         this.radio=radio;
     }
+    public Circulo()
+    {
+        super();
+        radio=ClaseFM.pedirEntero("Ingrese el Radio del Circulo");
+        setNombre("Circulo");
+    }
     //toString
     public String toString()
     {

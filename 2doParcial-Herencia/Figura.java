@@ -8,9 +8,11 @@ public class Figura
     //Constructores Vacio Parametros
     public Figura()
     {
-        this.x=0;
+        /*this.x=0;
         this.y=0;
-        this.nombre="";
+        this.nombre="";*/
+        x=ClaseFM.pedirEntero("Ingrese una Coordenada X");
+        y=ClaseFM.pedirEntero("Ingrese una Coordenada Y");
     }
     public Figura(int x, int y, String nombre)
     {

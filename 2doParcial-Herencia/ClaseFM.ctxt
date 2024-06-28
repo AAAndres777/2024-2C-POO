@@ -2,4 +2,6 @@
 comment0.target=ClaseFM
 comment1.params=msg
 comment1.target=void\ mensaje(java.lang.String)
-numComments=2
+comment2.params=msg
+comment2.target=int\ pedirEntero(java.lang.String)
+numComments=3
