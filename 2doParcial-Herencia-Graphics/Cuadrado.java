@@ -1,3 +1,5 @@
+import java.awt.Graphics;
+import java.awt.Color;
 public class Cuadrado extends Figura //Heredamos de Figura
 {
     //Atributos
@@ -15,7 +17,13 @@ public class Cuadrado extends Figura //Heredamos de Figura
         lado=ClaseFM.pedirEntero("Ingrese el Lado del Cuadrado");
         setNombre("Cuadrado");
     }
-    
+    public void dibuja(Graphics g)
+    {
+        g.setColor(Color.YELLOW);
+        g.fillRect(getX(),getY(),lado,lado);
+        g.setColor(Color.BLACK);
+        g.drawRect(getX(),getY(),lado,lado);
+    }
     //toString
     public String toString()
     {

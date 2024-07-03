@@ -2,6 +2,8 @@
 comment0.target=Figura
 comment1.params=
 comment1.target=Figura()
+comment10.params=g
+comment10.target=void\ dibuja(java.awt.Graphics)
 comment2.params=x\ y\ nombre
 comment2.target=Figura(int,\ int,\ java.lang.String)
 comment3.params=x
@@ -18,4 +20,4 @@ comment8.params=
 comment8.target=java.lang.String\ getNombre()
 comment9.params=
 comment9.target=java.lang.String\ toString()
-numComments=10
+numComments=11

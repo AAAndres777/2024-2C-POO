@@ -1,3 +1,4 @@
+import java.awt.Graphics;
 public class Figura
 {
     //Atributos
@@ -47,5 +48,9 @@ public class Figura
     public String toString()
     {
         return "Figura Nombre: "+nombre+" Coordenada X "+x+" Y "+y;
+    }
+    public void dibuja(Graphics g)
+    {
+        
     }
 }

@@ -5,6 +5,10 @@ public class ClaseFM
     {
         JOptionPane.showMessageDialog(null,msg);
     }
+    public static int generaAleatorio(int d, int h)
+    {
+        return ((int)(Math.random()*(h-d+1)+d));
+    }
     public static int pedirEntero(String msg)
     {
         int num=0;

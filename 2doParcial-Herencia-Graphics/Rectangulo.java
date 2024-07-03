@@ -1,3 +1,4 @@
+import java.awt.*;
 public class Rectangulo extends Figura //Heredamos de Figura
 {
     //Atributos
@@ -17,6 +18,13 @@ public class Rectangulo extends Figura //Heredamos de Figura
         base=ClaseFM.pedirEntero("Ingrese una Base");
         altura=ClaseFM.pedirEntero("Ingrese una Altura");
         setNombre("Rectangulo");
+    }
+    public void dibuja(Graphics g)
+    {
+        g.setColor(Color.RED);
+        g.fillRect(getX(),getY(),base,altura);
+        g.setColor(Color.BLACK);
+        g.drawRect(getX(),getY(),base,altura);
     }
     //toString
     public String toString()
