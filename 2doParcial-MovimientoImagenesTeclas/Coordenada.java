@@ -20,6 +20,14 @@ public class Coordenada
         this.ancho=icono.getIconWidth();
         this.alto=icono.getIconHeight();
     }
+    public void setRuta(String ruta)
+    {
+        this.ruta=ruta;
+        this.icono=new ImageIcon(getClass().getResource(ruta));//Dimensiones
+        this.imagen=icono.getImage();//Dibujarla-Graphics
+        this.ancho=icono.getIconWidth();
+        this.alto=icono.getIconHeight();
+    }
     public String toString()
     {
         return x+" "+y+" "+ruta;

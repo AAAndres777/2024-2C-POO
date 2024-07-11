@@ -15,7 +15,7 @@ public class Escenario extends JPanel
         
         this.setBackground(Color.WHITE);
         this.setFocusable(true);//Vuelve prioridad este panel
-        this.setSize(f.ancho,f.alto);
+        this.setSize(f.ancho,f.alto);//Tamanio del Panel
         this.setVisible(true);//Muestra el Panel
     }
     public void inicializarFondo()
