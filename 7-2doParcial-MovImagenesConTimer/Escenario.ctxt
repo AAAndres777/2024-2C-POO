@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Escenario
+comment1.params=
+comment1.target=Escenario()
+comment10.params=
+comment10.target=void\ inicializarObstaculo()
+comment11.params=
+comment11.target=void\ inicializarCarro()
+comment12.params=g
+comment12.target=void\ paint(java.awt.Graphics)
+comment2.params=evt
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment3.params=
+comment3.target=void\ inicializarCarros()
+comment4.params=g
+comment4.target=void\ dibujarCarros(java.awt.Graphics)
+comment5.params=dir\ limite
+comment5.target=void\ moverCarros(char,\ int)
+comment6.params=evt
+comment6.target=void\ keyReleased(java.awt.event.KeyEvent)
+comment7.params=evt
+comment7.target=void\ keyPressed(java.awt.event.KeyEvent)
+comment8.params=evt
+comment8.target=void\ keyTyped(java.awt.event.KeyEvent)
+comment9.params=
+comment9.target=void\ inicializarFondo()
+numComments=13
