@@ -28,6 +28,8 @@ public class Escenario extends JPanel implements KeyListener,ActionListener
     JFrame formulario;
     int nivel;
     String estado="";
+    Reproductor sonidofondo;
+    Reproductor sonidochoque;
     public Escenario(JFrame formulario, int nivel)
     {
         //Inicializar Formulario y el Nivel
@@ -44,11 +46,21 @@ public class Escenario extends JPanel implements KeyListener,ActionListener
         t.addActionListener(this);
         //t.start();
         
+        inicializarSonidos();
+        
         this.setBackground(Color.WHITE);//Cambiar el Fondo a Blanco
         this.setFocusable(true);//Vuelve prioridad este panel
         this.setSize(f.ancho,f.alto);//Tamanio del Panel
         this.addKeyListener(this);//Agregando el Evento de Teclas en el Panel
         this.setVisible(true);//Muestra el Panel
+    }
+    public void inicializarSonidos()
+    {
+       sonidofondo = new Reproductor();
+       sonidofondo.setPath("sonidos/mariobros.mp3");
+       
+       sonidochoque = new Reproductor();
+       sonidochoque.setPath("sonidos/explosion2.mp3");
     }
     //Metodo para escuchar las acciones
     public void actionPerformed(ActionEvent evt)
@@ -88,6 +100,8 @@ public class Escenario extends JPanel implements KeyListener,ActionListener
     }
     public void saltoNivel()
     {
+        sonidofondo.pause();
+        sonidochoque.play(-1);
         JOptionPane.showMessageDialog(null,"Salto de Nivel");
         estado="Salto de Nivel";
         t.stop();//Paramos el Timer
@@ -140,6 +154,7 @@ public class Escenario extends JPanel implements KeyListener,ActionListener
         else if(codigo==32)//Detectar la barra espaciadora
         {
             t.start();
+            sonidofondo.play(-1);//Reproducimos el sonido de Fondo
         }
         repaint();
     }
